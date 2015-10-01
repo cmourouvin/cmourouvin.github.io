@@ -1,0 +1,91 @@
+* { margin: 0;}
+html,body{ height:100%; padding-top:0;background-color: #FFF}
+
+img {
+  display:block;
+  max-width:100%;
+  height:auto
+}
+
+pre {
+  -moz-tab-size:4;
+  -o-tab-size:4;
+  -webkit-tab-size:4;
+  -ms-tab-size:4;
+  tab-size:4;
+}
+
+code {
+  color: #515153;
+}
+
+/* Wrapper for page content to push down footer */
+#wrapper {
+  min-height: 100%;
+  height: auto !important;
+  /* Pad bottom by footer height */
+  padding: 0 0 260px;
+  /* Negative indent footer by its height */
+  margin: 0 auto -235px;
+}
+
+.content {
+  padding-top: 80px;
+}
+
+.footer {
+  color:#FFFFFF;
+  background-color: #575757;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.col-m-footer-group ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.footer a {
+  color:#FFFFFF;
+}
+
+.credit {
+  text-align:center;
+  margin-top: 50px;
+}
+
+.download-button {
+  margin-right: 10px;
+}
+
+.community-icons {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* YAML styles */
+.yaml .l-Scalar-Plain { color: #008000; }
+.yaml .p-Indicator { color: #666666; font-weight: bold; } /* Operator */
+
+i.fa-slack {
+    -ms-transform: rotate(19deg);
+    -webkit-transform: rotate(19deg);
+    transform: rotate(19deg);
+}
+
+.search-results-section {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  background-color: #f8f8f8;
+  border-left: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  width: 400px;
+  z-index: 1000;
+  padding: 10px;
+}
+
+.inline {
+  display: inline;
+}

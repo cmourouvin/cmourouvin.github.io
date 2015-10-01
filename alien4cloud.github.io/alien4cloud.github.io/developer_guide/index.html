@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    
+      <div class="col-md-3">
+        <div id="sidebar_menu" class="tree" role="complementary"></div>
+      </div>
+      <div id="content" class="col-md-9">
+    
+        <h1 style="margin-top: 0px;">Developer Guide</h1>
+        <p>ALIEN has been designed to be easily extended and integrated with other systems. It uses a plugin mechanism in order to provide extensions, and the REST API makes it easy to integrate.</p>
+
+<p>The REST API documentation can be browsed directly on ALIEN’s server (<code>http://\&lt;alien-url\&gt;/api-doc/index.html</code>, e.g. <code>http://localhost:8088/api-doc/index.html</code>) and this section will not provides more details about it.</p>
+
+<p>This section gives a focus to ALIEN extensions through the plugin mechanism. In order to understand plugins it is important to know how ALIEN is designed and how plugins are managed by ALIEN.</p>
+
+<h3 id="mock-plugin">Mock plugin</h3>
+
+<p>If you want to try out Alien 4 Cloud but not use a real cloud for deployments you can use the mock PaaS Provider plugin. This is a plugin that we use for our tests and that mock the PaaS orchestrator.</p>
+
+<div class="note warning">
+<p>The mock plugin does not allow you to test any of your components as it do not deploy anything or even call your scripts. To do so you should use a real PaaS Provider plugin like cloudify plugin and deploy on a local cloud technology like Virtua Box or Docker (note that docker support will come with support of cloudify 3).</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div><!-- /container -->
+<script>
+var hash = location.hash.replace( /^#/, '' );
+if(hash && hash!== null && hash.match(/html$/)) {
+} else {
+  var newLocation = location.protocol+"//"+location.host+"#"+location.pathname;
+  location.replace(newLocation);
+}
+</script>
+<script type="text/javascript" src="/js/post-layout.js"></script>
+<script>
+$(document).ready(function () {
+  makeSideBar('DEVELOPER_GUIDE', 'index');
+});
+</script>
+
+<script>
+$("div[data-gist]").gist();
+</script>

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* Note types */
+.note {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    position: relative;
+}
+
+@media (max-width: 568px) { .note {
+        margin-right: -10px;
+    }
+}
+
+@media (min-width: 768px) { .note {
+        margin-left: -10px;
+    }
+}
+
+.note h5, .note p {
+    margin: 0;
+}
+.note h5 {
+    line-height: 1.5em;
+    font-weight: 900;
+    font-style: normal;
+}
+.note p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.info {
+    border-left-color: #1b809e;
+}
+.info h5 {
+  color: #1b809e;
+}
+
+.warning {
+    border-left-color:#aa6708;
+}
+.warning h5 {
+  color: #aa6708;
+}
